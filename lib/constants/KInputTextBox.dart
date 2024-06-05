@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 const KinputTextBox= InputDecoration(
   filled: true,
   fillColor: Colors.white,
-  labelStyle: TextStyle(color:Color(0xFF8EC5FC)),
+  labelStyle: TextStyle(color:Colors.black),
   border: OutlineInputBorder(
     borderRadius: BorderRadius.all(Radius.circular(10.0)),
     borderSide: BorderSide.none,
@@ -18,7 +18,7 @@ const KinputTextBox= InputDecoration(
   focusedBorder: OutlineInputBorder(
     borderRadius: BorderRadius.all(Radius.circular(10.0)),
     borderSide: BorderSide(
-      color: Color(0xFFE0C3FC),
+      color: Colors.black,
       width: 2.0,
     ),
   ),

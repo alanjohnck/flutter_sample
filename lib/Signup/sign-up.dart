@@ -12,6 +12,7 @@ class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return ScaffoldGradientBackground(
+
       gradient: LinearGradient(
         begin: Alignment.bottomLeft,
         end: Alignment.topRight,
@@ -64,21 +65,21 @@ class _SignUpState extends State<SignUp> {
                      TextField(
                        decoration: KinputTextBox.copyWith(labelText: 'Enter the Email'),
                      ),
-                     Text("OR"),
+                     const Text("OR"),
                      Container(
                        child: const Row(
+                         mainAxisAlignment: MainAxisAlignment.center,
                          children: [
                            CircleAvatar(
-                             backgroundColor: Colors.amber,
-                             child: Text(
-                               "G",
-                               style: TextStyle(
-                                 fontSize: 20.0,
-                                 fontWeight: FontWeight.bold,
-                                 color: Colors.white
-                               ),
-                             )
-                           )
+                             backgroundImage: AssetImage('assets/images/google.png'),
+                           ),
+                           SizedBox(
+                             width: 20.0,
+                           ),
+                           CircleAvatar(
+                              radius: 16,
+                               backgroundImage: AssetImage("assets/images/face.png"),
+                           ),
                          ],
                        ),
                      )
